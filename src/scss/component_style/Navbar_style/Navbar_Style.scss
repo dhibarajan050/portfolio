@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap");
+
+nav{
+    font-family: "Poppins", sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+
+    .logo{
+        color: $color-white;
+        font-weight: 700;
+        font-size: 2em;
+        text-decoration: none;
+    
+        span{
+            color: $color-primary;
+        }
+    }
+
+    ul{
+        position: relative;
+        display: flex;
+
+        li{
+            list-style: none;
+            margin-left: 50px;
+
+            a{
+                color: $color-white;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: 400;
+                
+                &:hover{
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}
+// after the scroll y nav bar styling
+nav.sticky{
+    background-color: $color-white;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba($color-black,.5);
+
+    .logo{
+        color: $color-black;
+    }
+
+    ul li a{
+        color: $color-black;
+        
+        &:hover{
+            color: $color-primary;
+        }
+    }
+
+}
+
+@media (max-width: 991px){
+    nav,nav.sticky{
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-image: url('./outline_menu_white_18dp.png');
+        background-size: 40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        transition: 1.5s;
+    }
+    .menuToggle.active{
+        background-image: url('./outline_close_white_18dp.png');
+        background-size: 40px;
+        width: 40px;
+        height: 40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 2s;
+    }
+
+   ul.active{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: $color-white;
+
+    li{
+        margin-left: 0;
+
+        a{
+            color: $color-black;
+            font-size: 1.6em;
+            font-weight: 400;
+        }
+    }
+
+    }
+
+    nav.sticky .menuToggle{
+        filter: invert(1);
+    }
+
+    
+}
+
+
+

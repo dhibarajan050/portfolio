@@ -1,0 +1,85 @@
+.banner{
+    position: relative;
+    width: 100vw;
+    height: 95vh;
+    background: linear-gradient(to right bottom,rgba(0,0,0,.5),rgba(0,0,0,.5)),url('../../../image/banner1.jpg');
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    display: flex;
+    align-items: center;//horizontal center
+    justify-content: center;//vertical center
+    background-size: cover;
+    background-position-y: top;
+    background-attachment: fixed;
+
+    .text-box{
+        display: inline-block;
+        text-align: center;
+
+        .heading-primary{
+            color: $color-white;
+            font-family: 'Nunito', sans-serif;
+            font-size: 50px;
+            font-weight: 400;
+        }
+        // button section
+        .banner-button{
+            position: relative;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 15px 40px;
+            margin-top: 20px;
+            display: inline-block;
+            color: $color-black;
+            border-radius: 100px;
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba($color-black, 0.3);
+            background-color: $color-white;
+            transition: all 0.3s;
+
+            &:hover{
+                background-color: $color-primary;
+                color: $color-white;
+                box-shadow: 0 5px 10px rgba($color-primary, 0.3);
+                transform: translateY(-4px);
+            }  
+        }
+
+        // button:after{
+        //     position: absolute;
+        //     content: "";
+        //     display: inline-block;
+        //     height: 100%;
+        //     width: 100%;
+        //     border-radius: 100px;
+        //     top: 0;
+        //     left: 0;
+        //     background-color: $color-white;
+        //     // z-index: -1;
+        //     translate: all 0.4s;   
+     
+        // }
+
+        // button:hover:after{
+        //     opacity: 0;
+        //     transform: scale(1.5);
+        // }
+        
+
+        
+
+    }
+
+    
+}
+
+@media (max-width: 991px){
+   .banner{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    .banner .text-box .heading-primary{
+        font-size: 30px;
+    }
+    .banner-button{
+        padding: 10px 25px;
+    }
+   }
+}

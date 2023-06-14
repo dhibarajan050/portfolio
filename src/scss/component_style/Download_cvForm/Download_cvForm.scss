@@ -1,0 +1,31 @@
+.download_cvForm{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right bottom,rgba(0,0,0,.5),rgba(0,0,0,.5)),url('../../../image/banner1.jpg');
+    display: flex;
+    align-items: center;//horizontal center
+    justify-content: center;//vertical center
+    background-size: cover;
+    .centering{
+        background-color: #fff;
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        h3{
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .download_cvForm{
+        .centering{
+            margin: 0 3px;
+            padding: 5px;
+        }
+    }
+    
+}

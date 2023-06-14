@@ -1,0 +1,48 @@
+.skill{
+
+    
+    .progressbar{
+        list-style: none;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: 50px;
+    
+        .bar{
+            background: silver;
+            display: block;
+            height: 6px;
+            border: 1px solid rgba(0,0,0,.3);
+            border-radius: 3px;
+            overflow: hidden;
+    
+            span{
+                height: 6px;
+                float: left;
+                background: $color-primary;
+            }
+            .react{
+                width: 90%;
+            }
+            .node{
+                width: 80%;
+            }
+            .js{
+                width: 70%;
+            }
+            .db{
+                width: 60%;
+            }
+            .python{
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .skill{
+        .progressbar{
+            margin-right: 1px;
+        }
+    }
+}

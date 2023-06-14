@@ -1,0 +1,31 @@
+a{
+    text-decoration: none;
+}
+.default-secondary_btn{
+    padding: 15px 40px;
+    display: inline-block;
+    color: $color-primary;
+    margin-top: 40px;
+    border-radius: 100px;
+    box-shadow: 0 10px 20px rgba($color-black,0.9);
+    background-color: $color-white;
+    transform: translateY(-10px);
+    transition: all 0.3s;
+    &:hover{
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0 5px 10px rgba($color-primary, 0.3);
+        transform: translateY(-6px);
+    }
+}
+
+.default-third_btn{
+    padding: 15px 40px;
+    display: inline-block;
+    color: $color-primary;
+    margin-top: 40px;
+    border-radius: 100px;
+    box-shadow: 0 10px 20px rgba($color-black,0.9);
+    background-color: $color-white;
+    
+}

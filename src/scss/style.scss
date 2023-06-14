@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+// default styling
+@import "./default_Style/variable.scss";
+@import "./default_Style/button.scss";
+
+// component styling
+@import "./component_style/Navbar_style/Navbar_Style.scss";
+@import "./component_style//Banner_styling/Banner_style.scss";
+@import "./component_style/AboutUs/AboutUs_Style.scss";
+@import "./component_style//Skill_styling/skill_styling.scss";
+@import "./component_style/Project/Project_styling.scss";
+@import "./component_style/Contact/Contact_style.scss";
+@import "./component_style/Footer_styling/Footer_styling.scss";
+
+// Sub components
+@import "./component_style/Download_cvForm/Download_cvForm.scss";
+@import "./component_style/Login/Login.styling.scss";
+@import "./component_style/Page_UnderConstruction/Construction.scss";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.7;
+    background-color: #fff;
+    color: #777;
+  }
+
+  .section:not(:last-child){
+      margin-bottom: 5em;
+  }
+
+  @media (max-width:629px) {
+    .section:not(:last-child){
+      margin-bottom: 4em;
+  }
+}
+  .heading-primary{
+      color: $color-primary;
+      font-size: 35px;
+      margin-bottom: 25px;
+  }
+
+ 
